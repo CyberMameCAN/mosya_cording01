@@ -1,0 +1,217 @@
+body {
+    font-family: Georgia, 游明朝, YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+    font-size: 16.88px;
+    line-height: 1.8;
+}
+
+a {
+    color: #444;
+    text-decoration: none;
+}
+
+header {
+    padding-top: 50px;
+}
+
+    header h1 {
+        font-size: 36px;
+
+    }
+    header p {
+        font-size: 1.2em;
+        margin-top: 0.2em;
+    }
+
+.container {
+    display: flex;
+/*    justify-content: center;*/
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 1077px;
+}
+
+.partition-border {
+    border-top: 1px solid #ccc;
+}
+
+.header-left {
+    width: 30%;
+}
+
+.header-right {
+    display: flex;
+    justify-content: space-between; /* 均等配置 */
+    width: 70%;
+}
+
+.gnav {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 70px;
+    /*padding: 0 283px 0 0;*/
+}
+
+    .gnav ul {
+        list-style-type: none;
+    }
+    .gnav li {
+        font-size: 16.88px;
+        padding: 0 15px;
+        position: relative;
+    }
+        .gnav li a {
+            padding-bottom: 22px;
+        }
+        .gnav li a:hover {
+            color: #C49029;
+        }
+        .gnav li .fas {
+            margin-left: 0.5em;
+        }
+        .gnav li ul {
+            position: absolute;
+            top: 45px;
+            left: -5px;
+            height: 0;
+            visibility: hidden;
+        }
+            .gnav li ul li {
+                width: 200px;
+                border: 1px solid #f0f0f0;
+                padding: 10px 20px;
+                box-shadow: 0.5px 0.5px #fff;
+                opacity: 0;
+                transition: all 0.3s;
+            }
+            .gnav li:hover ul li {
+                opacity: 1;
+                visibility: visible;
+            }
+            .gnav li ul li a {
+                display: block;
+                padding-bottom: 0;
+            }
+
+#search-wrapper {
+    /*display: inline-block;*/
+    height: 40px;
+    /*margin-left: 100px;*/
+    margin-top: 70px;
+    position: relative;
+    z-index: 1;
+}
+
+    #search-wrapper .search-field {
+        background: url(../images/search-icon.png) 5px center no-repeat;
+        background-color: #fff;
+        background-size: 24px 24px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        height: 34px;
+        padding-left: 30px;
+        position: absolute;
+        right: 0;
+        transition: all 0.3s;
+        width: 0;
+    }
+    #search-wrapper .search-field:focus {
+        border: 1px solid #f0f0f0;
+        cursor: text;
+        width: 210px;
+    }
+
+#header-image {
+    /*height: 700px;*/
+    text-align: center;
+}
+    #header-image img {
+        margin: 84px auto;
+    }
+
+    #header-image p {
+        font-size: 27px;
+        color: #777;
+    }
+
+main {
+    padding-top: 84px;
+    width: 100%;
+}
+    main .post {
+        display: flex;
+        justify-self: space-around;
+        margin: 0 auto 84px;
+        width: 1077px;
+    }
+    main .post .side-subinfo {
+        color: #999;
+        width: 30%;
+    }
+    main .post .side-main {
+        width: 70%;
+    }
+    main .post h2 {
+        font-size: 1.32rem;
+        margin-bottom: 1.6rem
+    }
+
+footer {
+    border-top: 1px solid #ccc;
+    /*height: 111px;*/
+
+}
+    footer h3 :not(:nth-child(1)) {
+        font-size: 0.8em;
+        margin-bottom: 2.5em;
+    }
+    footer ul {
+        list-style: none;
+    }
+    footer .container {
+        padding: 2em 0;
+    }
+    footer .footer-describe {
+        padding: 0.5em;
+        width: 21%;
+    }
+    footer .footer-describe #my-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+        footer .footer-describe #my-info img {
+            border-radius: 50%;
+            width: 100px;
+            height: auto;
+        }
+        footer .footer-describe #my-info h3 {
+            margin-top: 41px;
+        }
+    footer #menu-social {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        width: 25%;
+    }
+        footer #menu-social ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+        }
+    footer du.blog-side1 dt {
+        margin-bottom: 0.2em;
+    }
+        footer du dt a {
+            text-decoration: underline #aaa;
+        }
+    footer du dd {
+        margin-bottom: 1em;
+    }
+    footer ul.blog-side2 a {
+        text-decoration: underline #aaa;
+    }
+footer .auth {
+        width: 75%;
+    }
